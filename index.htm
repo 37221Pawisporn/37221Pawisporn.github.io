@@ -7,53 +7,104 @@
 
   <style>
     body {
-      background-color: #F08080;
+      margin: 0;
+      font-family: "Tahoma", sans-serif;
+      background: linear-gradient(to bottom right, #ffd1dc, #ffe4ec);
       color: #333;
       text-align: center;
-      padding: 50px;
-      font-family: sans-serif;
-      margin: 0;
+      padding: 40px 20px;
     }
 
     .card {
       background: white;
-      border-radius: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      max-width: 500px;
+      border-radius: 25px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      max-width: 700px;
       margin: 0 auto;
-      padding: 30px;
+      padding: 35px 25px;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #f8b6c8;
+      margin-bottom: 20px;
     }
 
     h1 {
-      color: #2c3e50;
+      color: #c94f7c;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 0;
+      font-size: 20px;
     }
 
     p {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.8;
+      margin: 10px 0;
+    }
+
+    .highlight {
+      color: #c94f7c;
+      font-weight: bold;
     }
 
     .btn {
       display: inline-block;
-      background: #3498db;
+      margin-top: 25px;
+      background: #c94f7c;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 24px;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 8px;
-      margin-top: 15px;
+      font-size: 16px;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      background: #2980b9;
+      background: #a83d65;
+    }
+
+    .info-box {
+      background: #fff6f8;
+      border-radius: 15px;
+      padding: 15px;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .info-box h3 {
+      color: #c94f7c;
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน</h1>
-    <p>สวัสดีค่ะ! ฉันชื่อ <strong>ภวิษย์พร อ่วมขัน (Pawisporn Uamkhan)</strong></p>
-    <p>ขณะนี้กำลังศึกษา/สนใจด้านวิทย์สุขภาพ</p>
-    <p>นี่คือเว็บไซต์แรกของฉันที่โฮสต์บน GitHub Pages!</p>
+
+    <img src="https://drive.google.com/uc?export=view&id=1munrsKoUshrL5N51GGNc0R1joeiSbit1" alt="รูปโปรไฟล์" class="profile-img">
+
+    <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
+    <h2>เว็บไซต์แนะนำตัวและแฟ้มสะสมงาน</h2>
+
+    <p>สวัสดีค่ะ ฉันชื่อ <span class="highlight">ภวิษย์พร อ่วมขัน</span></p>
+    <p>กำลังศึกษาและสนใจด้าน <span class="highlight">วิทยาศาสตร์สุขภาพ</span></p>
+    <p>เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว ผลงาน และกิจกรรมที่ภาคภูมิใจ</p>
+
+    <div class="info-box">
+      <h3>ข้อมูลเบื้องต้น</h3>
+      <p><strong>ชื่อ-นามสกุล:</strong> ภวิษย์พร อ่วมขัน</p>
+      <p><strong>ชื่อเล่น:</strong> ป๋องแป้ง</p>
+      <p><strong>โรงเรียน:</strong> บ้านบึง “อุตสาหกรรมนุเคราะห์”</p>
+      <p><strong>แผนการเรียน:</strong> เตรียมวิศวะ</p>
+      <p><strong>อาชีพที่สนใจ:</strong> นักเทคนิคการแพทย์</p>
+    </div>
 
     <a href="portfolio.html" class="btn">ดูแฟ้มสะสมงานของฉัน</a>
   </div>
