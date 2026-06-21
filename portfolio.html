@@ -7,68 +7,168 @@
 
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f4f7f6;
-      text-align: center;
-      padding: 30px;
       margin: 0;
+      font-family: "Tahoma", sans-serif;
+      background: linear-gradient(to bottom right, #ffe4ec, #ffd1dc);
+      text-align: center;
+      padding: 40px 20px;
+      color: #333;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 950px;
       margin: 0 auto;
     }
 
-    h1 {
-      color: #2c3e50;
+    .header-box {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      margin-bottom: 25px;
     }
 
-    p {
-      color: #555;
+    h1 {
+      color: #c94f7c;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 18px;
+      margin: 0;
+      line-height: 1.6;
     }
 
     .project-card {
       background: white;
-      padding: 20px;
+      padding: 25px;
       margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-align: left;
     }
 
     .project-card h3 {
+      color: #c94f7c;
       margin-top: 0;
-      color: #2c3e50;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 8px 0;
+    }
+
+    .highlight {
+      color: #c94f7c;
+      font-weight: bold;
     }
 
     .btn {
       display: inline-block;
-      background: #2c3e50;
+      background: #c94f7c;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 24px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 10px;
       margin-top: 20px;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      background: #1a252f;
+      background: #a83d65;
+    }
+
+    .section-note {
+      background: #fff6f8;
+      border-left: 5px solid #f3a7bf;
+      padding: 12px 15px;
+      border-radius: 10px;
+      margin-top: 12px;
+    }
+
+    ul {
+      padding-left: 22px;
+      line-height: 1.8;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>แฟ้มสะสมงาน (Portfolio)</h1>
-    <p>นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจค่ะ</p>
 
-    <div class="project-card">
-      <h3>1. โครงงาน/ชิ้นงานวิทยาศาสตร์คำนวณ</h3>
-      <p>รายละเอียดชิ้นงาน : เขียนอธิบายสั้น ๆ ว่าทำอะไร ได้เรียนรู้อะไรจากงานนี้บ้าง</p>
+    <div class="header-box">
+      <h1>แฟ้มสะสมงาน (Portfolio)</h1>
+      <p class="subtitle">
+        แฟ้มสะสมงานฉบับย่อของ <span class="highlight">ภวิษย์พร อ่วมขัน</span><br>
+        จัดทำขึ้นเพื่อแนะนำตัวเอง แสดงความสนใจทางการศึกษา และเป้าหมายในอนาคต
+      </p>
     </div>
 
     <div class="project-card">
-      <h3>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h3>
-      <p>รายละเอียดชิ้นงาน : เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...</p>
+      <h3>1) ประวัติส่วนตัว</h3>
+      <p><strong>ชื่อ-นามสกุล:</strong> ภวิษย์พร อ่วมขัน</p>
+      <p><strong>ชื่อเล่น:</strong> ป๋องแป้ง</p>
+      <p><strong>โรงเรียน:</strong> บ้านบึง “อุตสาหกรรมนุเคราะห์”</p>
+      <p><strong>แผนการเรียน:</strong> เตรียมวิศวะ</p>
+      <p><strong>อาชีพที่สนใจ:</strong> นักเทคนิคการแพทย์</p>
+
+      <div class="section-note">
+        <p><strong>ข้อมูลเบื้องต้น:</strong> ฉันเป็นนักเรียนที่สนใจด้านวิทยาศาสตร์สุขภาพ และอยากพัฒนาตนเองให้มีความพร้อมสำหรับการศึกษาต่อในอนาคต</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>2) ความสนใจทางการศึกษา</h3>
+      <p>
+        ฉันมีความสนใจในด้าน <span class="highlight">วิทยาศาสตร์สุขภาพ</span> โดยเฉพาะงานที่เกี่ยวข้องกับการตรวจวิเคราะห์ในห้องปฏิบัติการ
+        และการนำความรู้ทางวิทยาศาสตร์ไปใช้ให้เกิดประโยชน์ต่อผู้อื่น
+      </p>
+      <p>
+        แม้ว่าปัจจุบันฉันจะยังอยู่ในช่วงเริ่มต้นของการเรียนรู้ แต่ฉันมีความตั้งใจที่จะศึกษาหาความรู้เพิ่มเติม
+        และพัฒนาตนเองอย่างต่อเนื่อง เพื่อให้เข้าใจสายอาชีพนี้มากขึ้น
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>3) อาชีพในฝัน : นักเทคนิคการแพทย์</h3>
+      <p>
+        อาชีพที่ฉันสนใจคือ <span class="highlight">นักเทคนิคการแพทย์</span> เพราะเป็นอาชีพที่เกี่ยวข้องกับการตรวจวิเคราะห์ตัวอย่างทางห้องปฏิบัติการ
+        เช่น เลือด ปัสสาวะ และสารคัดหลั่งต่าง ๆ ซึ่งมีบทบาทสำคัญในการช่วยสนับสนุนการวินิจฉัยโรคของแพทย์
+      </p>
+      <p>
+        ฉันสนใจอาชีพนี้เพราะเป็นงานที่ต้องใช้ความละเอียด ความรับผิดชอบ และความรู้ทางวิทยาศาสตร์
+        ซึ่งเป็นสิ่งที่ฉันอยากพัฒนาตนเองให้มีมากขึ้นในอนาคต
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>4) จุดเด่นและสิ่งที่อยากพัฒนาตนเอง</h3>
+      <p>สิ่งที่ฉันให้ความสำคัญในการพัฒนาตนเอง มีดังนี้</p>
+      <ul>
+        <li>ความรับผิดชอบต่อหน้าที่และการเรียน</li>
+        <li>ความตั้งใจในการเรียนรู้สิ่งใหม่ ๆ</li>
+        <li>การฝึกคิดอย่างเป็นระบบและมีเหตุผล</li>
+        <li>การพัฒนาความละเอียดรอบคอบในการทำงาน</li>
+        <li>การเตรียมความพร้อมด้านวิชาการสำหรับอนาคต</li>
+      </ul>
+
+      <div class="section-note">
+        <p><strong>เป้าหมายระยะสั้น:</strong> ตั้งใจเรียน พัฒนาผลการเรียน และศึกษาข้อมูลเกี่ยวกับสายวิทยาศาสตร์สุขภาพให้มากขึ้น</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>5) เป้าหมายในอนาคต</h3>
+      <p>
+        เป้าหมายของฉันคือการศึกษาต่อในสาขาที่เกี่ยวข้องกับ <span class="highlight">วิทยาศาสตร์สุขภาพ</span>
+        และเตรียมตัวให้พร้อมสำหรับเส้นทางสู่อาชีพ <span class="highlight">นักเทคนิคการแพทย์</span>
+      </p>
+      <p>
+        ฉันต้องการพัฒนาตนเองทั้งด้านความรู้ ความรับผิดชอบ และทักษะที่จำเป็น
+        เพื่อให้สามารถเติบโตเป็นบุคลากรที่มีคุณภาพ และนำความรู้ไปใช้ให้เกิดประโยชน์ต่อผู้อื่นในอนาคต
+      </p>
     </div>
 
     <a href="https://37221pawisporn.github.io/" class="btn">กลับหน้าแรก</a>
